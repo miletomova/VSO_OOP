@@ -1,0 +1,7 @@
+<?php 
+
+include 'Page.php';
+
+$account = new Page();
+$account->view_header('ACCOUNT HEADER');
+echo '<p></p>';
