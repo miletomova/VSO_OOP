@@ -1,0 +1,19 @@
+<?php 
+
+include 'PropertyTest.php';
+include 'Person.php';
+
+// $obj = new PropertyTest;
+
+// $obj->data = 1;
+// echo '<p></p>';
+// echo $obj->data;
+
+// echo "<p></p>";
+
+$person = new Person();
+
+$person->set_name('Person Name');
+echo $person->get_name();
+
+var_dump($person);
