@@ -1,0 +1,27 @@
+<?php 
+
+include 'Person.php';
+include 'RedCar.php';
+include 'BlueCar.php';
+
+// echo Person::$counter;
+// echo '<br>';
+
+// $man = new Person();
+// $man1 = new Person();
+// $man2 = new Person();
+// $man3 = new Person();
+// $man4 = new Person();
+// $man5 = new Person();
+// $man6 = new Person();
+
+echo RedCar::$color;
+echo '<br>';
+echo BlueCar::$color;
+echo '<br>';
+
+RedCar::get_color();
+echo '<br>';
+BlueCar::get_color();
+
+
