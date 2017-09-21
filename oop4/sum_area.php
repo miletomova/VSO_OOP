@@ -2,19 +2,19 @@
 
 class Sum_area {
 	
-	public $shapes 		= array();
-	public $all_areas	= 0;
+	static public $shapes 		= array();
+	static public $all_areas	= 0;
 
-	public function add_shape($shape){
-		$this->shapes[] = $shape;	
+	static public function add_shape($shape){
+		self::$shapes[] = $shape;	
 	}
 
-	public function sum_areas(){
-		foreach($this->shapes as $shape){
-			$all_areas+=$shape->get_area();
+	static public function sum_areas(){
+		foreach(self::$shapes as $shape){
+			self::$all_areas+=$shape->get_area();
 		}
 
-		return $all_areas;
+		return self::$all_areas;
 
 	}
 }
